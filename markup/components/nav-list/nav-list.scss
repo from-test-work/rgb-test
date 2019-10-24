@@ -1,0 +1,23 @@
+.nav-list{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    &__item{}
+    &__link{
+        color: #42515b;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 65px;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+    }
+}
+
+.nav-list{
+    &__item + &__item{
+        margin-left: 30px;
+    }
+    & + *{
+        margin-left: 50px;
+    }
+}

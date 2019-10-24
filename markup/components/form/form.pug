@@ -1,0 +1,34 @@
+mixin form(data)
+    .modal-form__title-wrap
+        .modal-form__title С радостью обсудим вашу идею
+        .modal-form__subtitle Просто расскажите о своих задумках, а&nbsp;мы придумаем, каких воплотить!
+    +b('form').form(action="contact" method="POST")
+        +e.fieldset
+            +e.label-group
+                +e.group
+                    +e('label').label
+                        input.form__input(type='text' name='user_name' placeholder='Представьтесь, пожалуйста')
+                +e.group
+                    +e('label').label
+                        input.form__input.form-control(name='user_phone' id="phone" type="text")
+                        //input.form__input#phone(type="tel" name="user_phone" placeholder='+7 (___) ___-__-__')
+            +e.textaria-group
+                +e.group
+                    +e('label').label
+                        textarea.form__textarea(type='text' name='user_text' placeholder='Расскажите немного о Вашем проекте')
+
+        +e.fieldset
+            .box
+                input#file-3.inputfile.inputfile-3(type='file', name='file-3[]', data-multiple-caption='{count} files selected', multiple='')
+                label(for='file-3')
+                    i.far.fa-file
+                    span Прикрепить файл
+
+        +e.fieldset
+            +e.checkbox
+                input(type="checkbox" id="checkbox1" name="" checked='checked')
+                label(for="checkbox1" class="checkbox")
+                    span.checkbox__icon
+                    span.checkbox__cnt.checkbox__cnt--left.checkbox__cnt--text Я согласен на обработку персональных данных
+
+            button.btn.btn-white Отправить

@@ -1,0 +1,22 @@
+/* Your custom fonts here */
+/*
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Bold.eot');
+    src: url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akrobat-Bold.woff') format('woff'),
+    url('../fonts/Akrobat-Bold.svg#custom_font') format('svg');
+    font-weight: 700;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+$Akrobat: 'Akrobat', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap&subset=cyrillic');
+$Ubuntu: 'Ubuntu', sans-serif;
+
+$fa-font-path: '../webfonts';

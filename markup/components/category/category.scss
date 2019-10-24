@@ -1,0 +1,20 @@
+.category{
+    display: flex;
+    &__item{
+        padding: 0 20px;
+        border-radius: 30px;
+        background-color: rgba($black, .2);
+    }
+    &__link{
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+}
+
+.category{
+    &__item + &__item{
+        margin-left: 10px;
+    }
+}

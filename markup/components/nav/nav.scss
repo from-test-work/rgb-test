@@ -1,0 +1,37 @@
+.nav{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    .call-to + .btn{
+        margin-left: 30px;
+    }
+}
+
+.hamburger{
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+    .hamburger{
+        display: block;
+    }
+    .nav{
+        padding: 0 15px;
+        .nav-list,
+        .call-to,
+        .btn{
+            display: none;
+        }
+    }
+}

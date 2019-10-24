@@ -1,0 +1,53 @@
+body.modal-is-open {
+    overflow: hidden !important;
+}
+
+.modal__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: $main-color;
+    border-radius: 50%;
+    color: $white;
+    cursor: pointer;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    //display: block;
+    padding: 60px;
+    background: rgba($black, 0.6);
+    z-index: 101;
+
+    &.is-open {
+        overflow-y: auto;
+    }
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-wrapper {
+        padding: 15px;
+    }
+}
+
+

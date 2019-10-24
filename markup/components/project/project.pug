@@ -1,0 +1,15 @@
+include ../category/category
+
+mixin project(data)
+    +b.project-wrapp
+        +b.project
+            each item in data.items
+                +e.item(class= item.class)
+                    //+e('img').img(src= item.src alt= item.alt)
+                    +e.title= item.title
+                    if item.buttons
+                        +category(item.buttons)
+    +b.btn-wrapp
+        +b('button').btn.btn-blue.plus Показать еще
+            span
+                i.fas.fa-plus

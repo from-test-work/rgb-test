@@ -1,0 +1,5 @@
+mixin category(data)
+    +b('ul').category
+        each item in data
+            +e('li').item
+                +e('a').link(href= item.href)= item.link

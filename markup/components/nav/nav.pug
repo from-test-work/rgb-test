@@ -1,0 +1,13 @@
+include ../brand/brand
+include ../nav-list/nav-list
+
+mixin nav(data)
+    b('nav').nav
+        +brand(brand)
+        +nav-list(navList)
+
+        a.call-to(href='tel:+73422250075') +7 342 225-00-75
+        button.btn.btn-white(data-open='false' data-html='form') Консультация
+
+        button.hamburger
+            i.fas.fa-bars
