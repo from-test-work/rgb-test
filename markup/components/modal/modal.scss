@@ -16,6 +16,11 @@ body.modal-is-open {
     border-radius: 50%;
     color: $white;
     cursor: pointer;
+    svg{
+        width: 16px;
+        height: 16px;
+        fill: #fff;
+    }
 }
 
 .modal-wrapper {
@@ -42,6 +47,17 @@ body.modal-is-open {
     position: relative;
     height: 100%;
     margin: auto;
+}
+
+@media screen and (max-width: 1199px) {
+    .modal {
+        height: auto;
+        &__close {
+            top: 0;
+            right: 0;
+            background-color: transparent;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {

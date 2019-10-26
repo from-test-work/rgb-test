@@ -1,7 +1,6 @@
-import $ from 'jquery';
 import Swiper from 'swiper';
 
-let swiper = new Swiper ('.main-slider', {
+const swiper = new Swiper ('.main-slider', {
     slidesPerView: 1,
     spaceBetween: 30,
     speed: 600,

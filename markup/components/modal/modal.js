@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import '../../static/js/libraries/custom-file-input';
 
 export default class Modal {
     constructor(opts) {
