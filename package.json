@@ -18,8 +18,8 @@
     "bemto.pug": "^2.1.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
-    "jquery.maskedinput": "^1.4.1",
-    "maskedinput": "^3.3.11",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-validation": "^1.19.1",
     "swiper": "^5.0.4"
   },
   "devDependencies": {

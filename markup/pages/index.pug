@@ -17,9 +17,13 @@ html(class="no-js", lang="ru")
 
         +modal
 
+        #loading.loading
+            svg.loading__svg.lds-eclipse(width='200px', height='200px', xmlns='http://www.w3.org/2000/svg', viewBox='0 0 100 100', preserveAspectRatio='xMidYMid', style='background: none;')
+                path(ng-attr-d='{{config.pathCmd}}', ng-attr-fill='{{config.color}}', stroke='none', d='M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50', fill='#f74212', transform='rotate(71.8099 50 51)')
+                    animatetransform(attributeName='transform', type='rotate', calcMode='linear', values='0 50 51;360 50 51', keyTimes='0;1', dur='1s', begin='0s', repeatCount='indefinite')
+
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/main%=hash=%%=min=%.js')
-

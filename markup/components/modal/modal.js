@@ -1,4 +1,7 @@
 import $ from 'jquery';
+import Form from "../form/form";
+
+const form = new Form();
 
 export default class Modal {
     constructor(opts) {
@@ -43,6 +46,7 @@ export default class Modal {
                     .fadeIn()
                     .css('display', 'flex')
                     .css('overflowY', 'auto');
+                form.init();
             });
     };
 

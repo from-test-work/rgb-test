@@ -2,15 +2,15 @@ mixin form(data)
     .modal-form__title-wrap
         .modal-form__title С радостью обсудим вашу идею
         .modal-form__subtitle Просто расскажите о своих задумках, а&nbsp;мы придумаем, каких воплотить!
-    +b('form').form(action="mail.php" method="POST")
+    +b('form').form(action="mail.php" autocomplete="off" method="POST" id="consultation")
         +e.fieldset
             +e.label-group
                 +e.group
                     +e('label').label
                         input.form__input(type='text' name='user_name' placeholder='Представьтесь, пожалуйста' required)
                 +e.group
-                    +e('label').label(for="phone")
-                        input.form__input(name='user_phone' id="phone" type="text" placeholder='+7 (___) ___-__-__' required)
+                    +e('label').label.validate-wraper
+                        input.form__input(type="text" name='user_phone' id="phone" required )
             +e.textaria-group
                 +e.group
                     +e('label').label

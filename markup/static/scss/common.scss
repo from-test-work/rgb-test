@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+//* {
+//    background: rgba($black, 0.05);
+//}
+
 ul{
     margin: 0;
     padding: 0;
@@ -30,6 +34,7 @@ button {
 .page {
     overflow-x: auto;
     &.is-nav-opened {
+        overflow: hidden;
         &:before{
             content: '';
             position: fixed;
@@ -69,11 +74,6 @@ body{
     text-transform: uppercase;
     letter-spacing: 1.6px;
 }
-
-
-
-
-
 
 .btn-white{
     color: $main-color;
@@ -165,3 +165,19 @@ body{
     }
 }
 
+.loading {
+    position: fixed;
+    background: rgba($black, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 10000;
+    &__svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}

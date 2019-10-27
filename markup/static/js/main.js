@@ -1,14 +1,34 @@
+import $ from 'jquery';
+import {isMobile} from "../js/helpers/detect-devise";
+import {breakpoints} from '../js/helpers/breakpoints.js';
+
+
+import Navigation from '../../components/nav/nav';
+import Modal from '../../components/modal/modal';
+import SubmitingForm from '../../components/form/form';
+
 import '../../components/header/header';
 import '../../components/carusel/carusel';
-import '../../components/nav/nav';
-import '../../components/form/form';
+// import '../../static/js/libraries/custom-file-input';
 
-import Modal from '../../components/modal/modal';
 
-/*
-    This file can be used as entry point for webpack!
- */
 const modal = new Modal();
+const navigation = new Navigation();
 
-modal.init();
+/*==============
+====================      READY      =====================
+========================================================*/
+$(document).ready(() => {
+    if (isMobile.any()) {
+        $('body').addClass(`is-mobile is-${isMobile.any()[0]}`);
+    }
+    modal.init();
+    navigation.init();
+});
 
+/*==============
+====================      RESIZE      ====================
+========================================================*/
+$(window).resize(() => {
+    navigation.resize(breakpoints);
+});
