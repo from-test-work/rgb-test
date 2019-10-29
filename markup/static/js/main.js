@@ -9,7 +9,6 @@ import SubmitingForm from '../../components/form/form';
 
 import '../../components/header/header';
 import '../../components/carusel/carusel';
-// import '../../static/js/libraries/custom-file-input';
 
 
 const modal = new Modal();

@@ -22,10 +22,9 @@
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 15px;
     }
     &__cnt{
-        margin-top: 99px;
+        margin-top: 78px;
         display: flex;
         flex-direction: column;
         width: 391px;
@@ -41,7 +40,12 @@
         color: #42515b;
         font-family: $Ubuntu;
         font-weight: 300;
-        line-height: 65px;
+        line-height: 20px;
+        margin-top: 21px;
+        margin-bottom: 56px;
+    }
+    .btn-blue{
+        width: 285px;
     }
 }
 
@@ -54,7 +58,7 @@
     align-items: center;
     position: relative;
     left: 0;
-    bottom: 62px;
+    bottom: 75px;
     z-index: 2;
 }
 
@@ -79,17 +83,22 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .main-slider__item{
-        position: relative;
-        background-size: cover;
-        &:before{
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(darken(saturate(adjust-hue(#ffffff, 210), 8.33), 4.71), .5);
+    .main-slider{
+        &__container{
+            padding: 0 15px;
+        }
+        &__item{
+            position: relative;
+            background-size: cover;
+            &:before{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(darken(saturate(adjust-hue(#ffffff, 210), 8.33), 4.71), .5);
+            }
         }
     }
 }
@@ -101,18 +110,20 @@
         &__item:nth-child(3),
         &__item:nth-child(4),
         &__item:nth-child(5){
-            height: auto;
-            padding: 50px 0;
+            height: 470px;
+            padding: 42px 0 50px;
+            margin: 42px 0 0;
         }
     }
+    .main-slider {
+        &__title {
+            font-size: 40px;
+            line-height: 45px;
+        }
 
-
-    .main-slider__title{
-        font-size: 40px;
-        line-height: 45px;
-    }
-    .main-slider__cnt{
-        margin-top: 0;
+        &__cnt {
+            margin-top: 0;
+        }
     }
     .swiper-pagination-bullets{
         justify-content: center;
@@ -123,16 +134,31 @@
 
 @media screen and (max-width: 575px) {
     .main-slider{
+        &__item:nth-child(1),
+        &__item:nth-child(2),
+        &__item:nth-child(3),
+        &__item:nth-child(4),
+        &__item:nth-child(5){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    .main-slider{
         &__cnt{
             width: 100%;
         }
         &__title{
             font-size: 26px;
             line-height: 1.2;
+            text-align: center;
         }
         &__subtitle{
             margin: 15px 0;
             line-height: 1.2;
+            text-align: center;
         }
         .btn-blue{
             max-width: 270px;

@@ -3,6 +3,7 @@ var data = {project: {
         {
             class: 'item-01',
             title: 'сайт официального\n' + 'дистрибьютора «Exxon Mobil»',
+            href: '#',
             buttons: [
                 {
                     href: '#',
@@ -13,6 +14,7 @@ var data = {project: {
         {
             class: 'item-02',
             title: 'Бот-консультант федерального\n' + 'застройщика «Талан»',
+            href: '#',
             buttons: [
                 {
                     href: '#',
@@ -23,6 +25,7 @@ var data = {project: {
         {
             class: 'item-03',
             title: 'сайт онлайн фитнес-клуба «TeenWeek»',
+            href: '#',
             buttons: [
                 {
                     href: '#',
@@ -37,6 +40,7 @@ var data = {project: {
         {
             class: 'item-04',
             title: 'дизайн и надежная\n' + 'поддержка магазина «Baseg»',
+            href: '#',
             buttons: [
                 {
                     href: '#',
@@ -46,7 +50,8 @@ var data = {project: {
         },
         {
             class: 'item-05',
-            title: 'Красивые решения для\n' + 'производства насосов ППД\n',
+            title: 'Красивые решения для\n' + 'производства насосов ППД',
+            href: '#',
             buttons: [
                 {
                     href: '#',
@@ -56,7 +61,8 @@ var data = {project: {
         },
         {
             class: 'item-06 invers',
-            title: 'Сайт кабельной и электропродукции «Кайрос инжиниринг»\n',
+            title: 'Сайт кабельной и электропродукции «Кайрос инжиниринг»',
+            href: '#',
             buttons: [
                 {
                     href: '#',
@@ -66,7 +72,8 @@ var data = {project: {
         },
         {
             class: 'item-07',
-            title: 'Ярко представили работы\n' + 'для «ГеоСпецТехнология»\n',
+            title: 'Ярко представили работы\n' + 'для «ГеоСпецТехнология»',
+            href: '#',
             buttons: [
                 {
                     href: '#',

@@ -5,8 +5,7 @@ mixin project(data)
         +b.project
             each item in data.items
                 +e.item(class= item.class)
-                    //+e('img').img(src= item.src alt= item.alt)
-                    +e.title= item.title
+                    +e('a').title(href= item.href)= item.title
                     if item.buttons
                         +category(item.buttons)
     +b.btn-wrapp

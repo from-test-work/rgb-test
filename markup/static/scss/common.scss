@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-//* {
-//    background: rgba($black, 0.05);
-//}
-
 ul{
     margin: 0;
     padding: 0;
@@ -18,6 +14,7 @@ ul{
 a{
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -90,7 +87,8 @@ body{
     color: $white;
     background: $main-color;
     border-radius: 60px;
-    padding: 19px 26px;
+    padding: 10px 20px;
+    height: 60px;
     &:hover{
         background: $white;
         color: $main-color;
@@ -115,8 +113,9 @@ body{
     color: $main-color;
     background: transparent;
     border-radius: 60px;
-    padding: 19px 26px;
+    padding: 10px 20px;
     width: 170px;
+    height: 50px;
     &:hover{
         color: $white;
         background: $main-color;

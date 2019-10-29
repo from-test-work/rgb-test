@@ -9,6 +9,7 @@ export default class Modal {
         this.$modal = $('#modal');
         this.$close = this.$modal.find('.modal__close');
         this.$content = this.$modal.find('.modal__content');
+        this.$loading = $('#loading');
         $.extend(this, opts);
     }
 
@@ -36,6 +37,7 @@ export default class Modal {
         fetch(`${location.origin}/${dataHTML}.html`)
             .then(response => response.text())
             .then(text => {
+                this.$loading.show();
                 this.$modal.addClass(`modal-${dataHTML}`);
                 $(text).appendTo(this.$content);
             })
@@ -47,6 +49,7 @@ export default class Modal {
                     .css('display', 'flex')
                     .css('overflowY', 'auto');
                 form.init();
+                this.$loading.hide();
             });
     };
 

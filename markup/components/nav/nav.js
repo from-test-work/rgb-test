@@ -44,28 +44,3 @@ export default class Navigation {
             : null
     };
 }
-
-
-
-// $(document).ready(function () {
-//     $('.hamburger').on('click', (event) => {
-//         event.preventDefault();
-//         const $navMobile = $('.nav__mobile');
-//
-//         $navMobile.toggleClass('expand');
-//         // $body.toggleClass('is-nav-opened');
-//         // $body.prepend($navMobile);
-//
-//
-//         return false;
-//     });
-//
-//     const mobileView = (breakpoints) => {
-//
-//         const $body = $('body');
-//
-//
-//     }
-//
-//     export default mobileView();
-// });
