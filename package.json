@@ -20,7 +20,7 @@
     "jquery": "^3.4.1",
     "jquery-mask-plugin": "^1.14.16",
     "jquery-validation": "^1.19.1",
-    "swiper": "^5.0.4"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
